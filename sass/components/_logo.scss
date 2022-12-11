@@ -1,0 +1,37 @@
+%logo {
+  @extend %link;  
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo--blue {
+  margin-right: -6px;
+  color: $color-accent;
+}
+
+.logo--black {
+  color: $color-logo-header;
+}
+
+.logo--white {
+  color: $color-white;
+}
+
+.header__logo {
+  @extend %logo;
+
+  
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 92px;
+  }
+  
+}
+
+.footer__logo {
+  @extend %logo;
+  margin-bottom: 20px;
+  display: inline-block;
+}

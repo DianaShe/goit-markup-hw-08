@@ -1,0 +1,35 @@
+.footer {
+  background-color: $color-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+    &__container {
+      @extend .container;
+      text-align: center;
+
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        text-align: start;
+      }
+      
+    }
+
+    &__wrapper {
+      @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 60px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+      }
+    }
+
+    &__box {
+      @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+      }
+    }
+}
